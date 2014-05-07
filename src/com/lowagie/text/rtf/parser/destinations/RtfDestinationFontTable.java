@@ -592,10 +592,7 @@ public final class RtfDestinationFontTable extends RtfDestination {
 				|| operatingSystem.indexOf("me") > -1) {
 			process = runtime.exec("command.com /c set");
 		} else if ((operatingSystem.indexOf("nt") > -1)
-				|| (operatingSystem.indexOf("windows 2000") > -1)
-				|| (operatingSystem.indexOf("windows xp") > -1)
-				|| (operatingSystem.indexOf("windows 2003") > -1)
-				|| (operatingSystem.indexOf("windows vista") > -1)) {
+				|| (operatingSystem.indexOf("windows ") > -1)) {
 			process = runtime.exec("cmd.exe /c set");
 		} else {
 			process = runtime.exec("env");
